@@ -29,6 +29,9 @@ app.use("/api", TransactionsRouter);
 const StatisticsRouter = require("./src/routes/statisticsRouter");
 app.use("/api", StatisticsRouter);
 
+const BarchartRouter = require("./src/routes/barchartRouter");
+app.use("/api", BarchartRouter);
+
 app.listen(port, ()=>{
     console.log(`Server is online at port ${port}`);
 });
