@@ -32,6 +32,9 @@ app.use("/api", StatisticsRouter);
 const BarchartRouter = require("./src/routes/barchartRouter");
 app.use("/api", BarchartRouter);
 
+const PiechartRouter = require("./src/routes/picahartRouter");
+app.use("/api",PiechartRouter);
+
 app.listen(port, ()=>{
     console.log(`Server is online at port ${port}`);
 });
