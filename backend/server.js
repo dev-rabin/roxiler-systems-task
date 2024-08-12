@@ -23,6 +23,9 @@ app.get("/", (req, res) => {
 const InitialiseDBRouter = require("./src/routes/initialiseDBRoute");
 app.use("/api", InitialiseDBRouter);
 
+const TransactionsRouter = require("./src/routes/transactionsRouter");
+app.use("/api", TransactionsRouter);
+
 app.listen(port, ()=>{
     console.log(`Server is online at port ${port}`);
 });
