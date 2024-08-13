@@ -4,7 +4,8 @@ const MonthDropDown = ({ selectedMonth, onChange }) => {
 
     return (
         <>
-            <select value={selectedMonth} onChange={(e) => onChange(e.target.value)} className=" bg-orange-500 p-2">
+           <div className="">
+           <select value={selectedMonth} onChange={(e) => onChange(e.target.value)} className=" bg-orange-400 p-2 rounded-md -ml-36 text-white font-bold">
                 {
                     months.map(month => (
                         <option key={month} value={month}>
@@ -13,6 +14,7 @@ const MonthDropDown = ({ selectedMonth, onChange }) => {
                     ))
                 }
             </select>
+           </div>
 
         </>
     )

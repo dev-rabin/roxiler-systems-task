@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 const TransactionsTable = ({ transactions }) => {
   return (
     <>
+      <div  className=' w-auto mx-3'>
       <Table striped bordered hover variant="dark">
         <thead>
           <tr>
@@ -36,6 +37,7 @@ const TransactionsTable = ({ transactions }) => {
           )}
         </tbody>
       </Table>
+      </div>
     </>
   );
 };
