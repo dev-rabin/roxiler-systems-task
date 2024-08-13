@@ -35,6 +35,9 @@ app.use("/api", BarchartRouter);
 const PiechartRouter = require("./src/routes/picahartRouter");
 app.use("/api",PiechartRouter);
 
+const CombinedAPIRouter = require("./src/routes/combinedAPIRouter");
+app.use("/api",CombinedAPIRouter);
+
 app.listen(port, ()=>{
     console.log(`Server is online at port ${port}`);
 });
